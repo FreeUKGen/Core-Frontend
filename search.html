@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>FreeREG</title>
+        
+        <!-- Styles -->
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Corben' rel='stylesheet' type='text/css'/>
+        
+        <!-- Normalization sheet -->
+        <link href="assets/css/normalize.css" media="screen" rel="stylesheet" type="text/css"/>
+        
+        <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        
+        <div id="container">
+            
+            <div id="header" class="header">
+                <h1>FreeREG</h1>
+                <h2>The home of U.K. Parish Register Information</h2>
+            </div>
+            
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected"><a href="search.html">Search</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="county_listing.html">County Listing</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div id="content">
+                
+                <h1>Search</h1>
+                
+                
+                
+                
+                
+                <h3>Help</h3>
+
+      <p>This is the help text for the basic search screen</p>
+
+      <p>In the real version, this would explain how the search fields work.</p>
+
+      <p>This will be editable via the admin UI and will not require sysadmin
+      intervention.</p>
+
+      <h3>Search Form</h3>
+
+      <p><i>(Copied from the current FreeREG site as a place-holder -- not representative
+      of the final FreeREG2 Basic search form.)</i></p>
+
+      <table>
+        <tr>
+          <td>Record Type:</td>
+
+          <td><label><input type="radio" name="RecordType" value="Baptisms" checked=
+          "checked" />Baptisms</label><label><input type="radio" name="RecordType" value=
+          "Marriages" />Marriages</label><label><input type="radio" name="RecordType"
+          value="Burials" />Burials</label></td>
+        </tr>
+
+        <tr>
+          <td>Surname:</td>
+
+          <td><input type="text" name="Surname" size="24" maxlength="80" /></td>
+        </tr>
+
+        <tr>
+          <td>Soundex:</td>
+
+          <td><label><input type="checkbox" name="Soundex" value="ON" />Check for
+          Soundex</label></td>
+        </tr>
+
+        <tr>
+          <td>Forename:</td>
+
+          <td><input type="text" name="Forename" size="24" maxlength="80" /></td>
+        </tr>
+
+        <tr>
+          <td>Year:</td>
+
+          <td><input type="text" name="Year" size="4" maxlength="4" /><label><input type=
+          "radio" name="YearRange" value="0" checked=
+          "checked" />Exact</label><label><input type="radio" name="YearRange" value=
+          "2" />+/- 2 years</label><label><input type="radio" name="YearRange" value=
+          "5" />+/- 5 years</label><label><input type="radio" name="YearRange" value=
+          "10" />+/- 10 years</label></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td></td>
+
+          <td>County<br />
+          <select name="County" size="10" multiple="multiple">
+            <option value="ABD">
+              Aberdeenshire
+            </option>
+
+            <option value="AGY">
+              Anglesey
+            </option>
+
+            <option value="ARL">
+              Argyllshire
+            </option>
+
+            <option value="AYR">
+              Ayrshire
+            </option>
+
+            <option value="BAN">
+              Banffshire
+            </option>
+
+            <option value="BDF">
+              Bedfordshire
+            </option>
+
+            <option value="BRK">
+              Berkshire
+            </option>
+
+            <option value="BEW">
+              Berwickshire
+            </option>
+
+            <option value="BRE">
+              Brecknockshire
+            </option>
+
+            <option value="BKM">
+              Buckinghamshire
+            </option>
+
+            <option value="BUT">
+              Bute
+            </option>
+
+            <option value="CAE">
+              Caernarvonshire
+            </option>
+
+            <option value="CAI">
+              Caithness-shire
+            </option>
+
+            <option value="CAM">
+              Cambridgeshire
+            </option>
+
+            <option value="CGN">
+              Cardiganshire
+            </option>
+
+            <option value="CMN">
+              Carmarthenshire
+            </option>
+
+            <option value="CHS">
+              Cheshire
+            </option>
+
+            <option value="CON">
+              Cornwall
+            </option>
+
+            <option value="CUL">
+              Cumberland
+            </option>
+
+            <option value="DEN">
+              Denbighshire
+            </option>
+
+            <option value="DBY">
+              Derbyshire
+            </option>
+
+            <option value="DEV">
+              Devon
+            </option>
+
+            <option value="DOR">
+              Dorset
+            </option>
+
+            <option value="DFS">
+              Dumfriesshire
+            </option>
+
+            <option value="DUR">
+              Durham
+            </option>
+
+            <option value="ELN">
+              East Lothian
+            </option>
+
+            <option value="ERY">
+              East Riding YKS
+            </option>
+
+            <option value="ENG">
+              England
+            </option>
+
+            <option value="ESS">
+              Essex
+            </option>
+
+            <option value="FIF">
+              Fifeshire
+            </option>
+
+            <option value="FLN">
+              Flintshire
+            </option>
+
+            <option value="ANS">
+              Forfarshire (Angus)
+            </option>
+
+            <option value="GLA">
+              Glamorganshire
+            </option>
+
+            <option value="GLS">
+              Gloucestershire
+            </option>
+
+            <option value="HAM">
+              Hampshire
+            </option>
+
+            <option value="HEF">
+              Herefordshire
+            </option>
+
+            <option value="HRT">
+              Hertfordshire
+            </option>
+
+            <option value="HUN">
+              Huntingdonshire
+            </option>
+
+            <option value="INV">
+              Inverness-shire
+            </option>
+
+            <option value="IOM">
+              Isle of Man
+            </option>
+
+            <option value="IOW">
+              Isle of Wight
+            </option>
+
+            <option value="JSY">
+              Jersey
+            </option>
+
+            <option value="KEN">
+              Kent
+            </option>
+
+            <option value="KCD">
+              Kincardineshire
+            </option>
+
+            <option value="KKD">
+              Kircudbrightshire
+            </option>
+
+            <option value="LKS">
+              Lanarkshire
+            </option>
+
+            <option value="LAN">
+              Lancashire
+            </option>
+
+            <option value="LEI">
+              Leicestershire
+            </option>
+
+            <option value="LIN">
+              Lincolnshire
+            </option>
+
+            <option value="LND">
+              London (City)
+            </option>
+
+            <option value="MER">
+              Merionethshire
+            </option>
+
+            <option value="MDX">
+              Middlesex
+            </option>
+
+            <option value="MLN">
+              Midlothian
+            </option>
+
+            <option value="MON">
+              Monmouthshire
+            </option>
+
+            <option value="MGY">
+              Montgomeryshire
+            </option>
+
+            <option value="NFK">
+              Norfolk
+            </option>
+
+            <option value="NRY">
+              North Riding YKS
+            </option>
+
+            <option value="NTH">
+              Northamptonshire
+            </option>
+
+            <option value="NBL">
+              Northumberland
+            </option>
+
+            <option value="NTT">
+              Nottinghamshire
+            </option>
+
+            <option value="OKI">
+              Orkney Isles
+            </option>
+
+            <option value="PEM">
+              Pembrokeshire
+            </option>
+
+            <option value="PER">
+              Perthshire
+            </option>
+
+            <option value="RAD">
+              Radnorshire
+            </option>
+
+            <option value="RFW">
+              Renfrewshire
+            </option>
+
+            <option value="ROC">
+              Ross &amp; Cromarty
+            </option>
+
+            <option value="ROX">
+              Roxburghshire
+            </option>
+
+            <option value="RUT">
+              Rutland
+            </option>
+
+            <option value="SHI">
+              Shetland Isles
+            </option>
+
+            <option value="SAL">
+              Shropshire
+            </option>
+
+            <option value="SOM">
+              Somerset
+            </option>
+
+            <option value="STS">
+              Staffordshire
+            </option>
+
+            <option value="STI">
+              Stirlingshire
+            </option>
+
+            <option value="SFK">
+              Suffolk
+            </option>
+
+            <option value="SRY">
+              Surrey
+            </option>
+
+            <option value="SSX">
+              Sussex
+            </option>
+
+            <option value="SUT">
+              Sutherland
+            </option>
+
+            <option value="WAR">
+              Warwickshire
+            </option>
+
+            <option value="WLN">
+              West Lothian
+            </option>
+
+            <option value="WRY">
+              West Riding YKS
+            </option>
+
+            <option value="WEM">
+              Westmeath
+            </option>
+
+            <option value="WES">
+              Westmorland
+            </option>
+
+            <option value="WIL">
+              Wiltshire
+            </option>
+
+            <option value="WOR">
+              Worcestershire
+            </option>
+          </select></td>
+        </tr>
+      </table>
+                
+                
+                
+                
+                
+                
+            </div> <!-- /#content -->
+            
+            <div id="footer">
+                
+            </div>
+            
+            
+        </div><!-- /#container -->
+        
+    </body>
+</html>
