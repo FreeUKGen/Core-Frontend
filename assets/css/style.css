@@ -99,7 +99,7 @@ a, a:link, a:visited {
 /* Table styles */
 
 table td {
-  padding: 15px;
+  padding: 8px;
 }
 
 thead td {
@@ -107,14 +107,22 @@ thead td {
 }
 
 thead th {
-  background: #fff;
+  /*background: #fff;
   border: none;
-  color: #5c6467;
+  color: #5c6467;*/
+}
+
+th {
+	text-align: left;
+	background-color: #5c6467;
+	border: 1px solid #5b6466;
+	color: #fff;
+	padding: 8px;
 }
 
 table {
 	width: 100%;
-	margin: 0;
+	margin: .5em 0;
 }
 
 td {
@@ -123,6 +131,11 @@ td {
 
 tbody td {
 	border: 1px solid #d7d7cc;
+}
+
+table ul {
+	padding: 0 0 0 2em;
+	margin: 0;
 }
 
 
@@ -135,6 +148,7 @@ form fieldset.inputs {
 	box-shadow: none;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
+	
 }
 
 
@@ -162,6 +176,10 @@ form fieldset.inputs {
 	margin: 0;
 	padding: 0;
 }
+
+/* ----------------
+HEADER 
+---------------------*/
 
 #header {
 	background: none;
@@ -230,6 +248,119 @@ form fieldset.inputs {
 	color: #286f07;
 }
 
+/* Sub nav (used anywhere we want nav like buttons) */
+
+.sub_nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+.sub_nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+.sub_nav li a {
+	border: 1px dotted #d7d7cc;
+	padding: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+.sub_nav li a:hover {
+	border: 1px dotted #d7d7cc;
+	background-color: #d7d7cc;
+	color: #286f07;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+	float: none;
+	width: auto;
+	display: block;
+	margin: 0 -30px 0 -30px;
+	padding: 10px 30px;
+	background-color: none;
+	background: none;
+	clear: both;
+	overflow: auto;
+	border-bottom: 1px dotted #d7d7cc;
+	height: auto;
+	font-size: .8em;
+}
+
+.breadcrumbs ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumbs ul li {
+	display: inline;
+}
+
+/* header search */
+
+.nav_search {
+	float: right;
+	clear: right;
+	text-align: right;
+	font-size: 1em;
+	/*background-color: red;*/
+	width: 18em;
+	padding: 10px 0px 0px 5px;
+	margin: -10px 0 -20px 0;
+}
+
+#nav form {
+	float: right;
+	clear: right;
+	text-align: right;
+	font-size: 1em;
+
+}
+
+#nav form .textField {
+	border: 1px solid #d7d7cc;
+	padding: .3em;
+	margin: 0;
+	width: 10em;
+	
+
+}
+
+#nav .submit {
+	/*background-color: RGBA(255,255,255,.8);*/
+	background: url(../template/RGBA-255-255-255_8.png) center center;
+	border: none;
+	padding: .3em;
+	margin: 0;
+	border-radius: 0;
+	background-color: #fff;
+}
+
+.textField, .submit {
+	/*background-color: RGBA(255,255,255,.8);*/
+	background: url(../template/RGBA-255-255-255_8.png) center center;
+	background-color: #fff;
+}
+
+.advanced_search {
+	float: right;
+	clear: right;
+	font-size: .8em;
+	margin-right: 4.7em;
+	/*background-color: #d7d7cc;*/
+	width: 13em;
+}
+
+
+/*Other*/
+
+
 .content {
 	
 }
@@ -252,6 +383,12 @@ Decorative Elements
 	padding: 10px 20px 0px 20px;
 }
 
+.key {
+	border: 3px double #d7d7cc;
+	padding: 5px 10px 0px 10px;
+	margin-bottom: 20px;
+}
+
 
 
 /* ---------------------------
@@ -262,6 +399,9 @@ County pages
 	float: right;
 }
 
+
+
+
 /* ---------------------------
 Volunteer pages
 ------------------------------*/
@@ -270,7 +410,108 @@ Volunteer pages
 	margin: 20px 0;
 }
 
+/* ---------------------------
+Search pages
+------------------------------*/
 
+.search_query {
+	
+}
+
+
+
+ul.checkbox_select_county::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+ul.checkbox_select_county::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+}
+ul.checkbox_select_county::-webkit-scrollbar-track {
+  background-color: #fff);
+  width: 7px;
+}
+
+.search_query ol {
+	margin: 0;
+	padding: 0;
+}
+
+.search_query ol li {
+	list-style-type: none;
+	border: 1px solid #d7d7cc;
+	margin: .5em 0 ;
+	padding: .5em;
+	background-color: #f7f7ec;
+}
+
+.search_query label {
+	display: block;
+	
+}
+
+.checkbox_select_county {
+	height: 15em;
+	overflow:scroll;
+	width: 20em;
+	border: 2px solid #d7d7cc;
+	background-color: #f7f7ec;
+	padding: 2px 0 0 1em;
+}
+
+.checkbox_select_county li {
+	list-style-type: none;
+}
+
+ol.search_record_type {
+	background-color: yellow;
+	clear: both;
+}
+
+ol.search_record_type li {
+	float: left;
+}
+
+.search_query p {
+	clear: both;
+}
+
+.search_query input {
+	margin-right: .5em;
+}
+
+/* Search results */
+
+.search_results_key {
+	border: 3px double #d7d7cc;
+;
+	float: right;
+	width: 40%;
+	font-size: .8em;
+	padding:.2em;
+	margin: .5em;
+	
+}
+
+.search_results_key ul {
+	margin: 0 0 0 1.5em;
+	padding: 0;
+}
+
+
+
+
+
+/* ---------------------------
+Temporary code for display -KMD
+------------------------------*/
+
+a.unlink {
+
+	font-style: normal;
+	text-decoration: none;
+}
 
 
 
