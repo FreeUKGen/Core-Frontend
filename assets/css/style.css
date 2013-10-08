@@ -444,6 +444,28 @@ ul.checkbox_select_county::-webkit-scrollbar-track {
 	margin: .5em 0 ;
 	padding: .5em;
 	background-color: #f7f7ec;
+	width: 45%;
+	float: left;
+	margin-right: 5px;}
+	
+li#search_query_last_name_input,
+li#search_query_soundex,
+li#search_wuery_first_name,
+li#search_query_fuzzy_input
+ {
+	height: 2.5em;
+}
+
+ol.search_record_type li {
+	width: 29%;
+}
+
+#search_query_submit_action {
+	width: 4.2em;
+	border: none;
+	background: none;
+	font-size: 1.6em;
+	padding: 0;
 }
 
 .search_query label {
@@ -454,7 +476,7 @@ ul.checkbox_select_county::-webkit-scrollbar-track {
 .checkbox_select_county {
 	height: 15em;
 	overflow:scroll;
-	width: 20em;
+	width: 45%;
 	border: 2px solid #d7d7cc;
 	background-color: #f7f7ec;
 	padding: 2px 0 0 1em;
