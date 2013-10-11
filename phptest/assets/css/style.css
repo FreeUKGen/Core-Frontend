@@ -1,0 +1,569 @@
+/* --------------------------
+ Stylesheet for wireframes
+ ----------------------------*/
+
+/* Fonts */
+
+body {
+	font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+	font-family: 'Corben', Georgia, "Times New Roman", Times, serif; 
+	/* Ideally would want to get rid of the !important, need to restructure CSS */
+	/* Corben is a google font, linked in header of HTML */
+}
+
+/* --------------------------
+ HTML Styles 
+ ----------------------------*/
+ 
+html {
+	background-color: #f7f7ec;
+	
+}
+
+body {
+	font-size: 16px;
+	border-right: 3px double #d7d7cc;
+	border: 3px double #d7d7cc;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6
+/* All #header specifications to override specificity rules in application.css stylesheet */ {
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
+	/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	color: #5d6468;
+	line-height: 1.4em;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	letter-spacing: 0;
+	position: relative;
+	overflow: auto;
+}
+
+
+h1,
+#header h1 {
+	font-size: 2.4em;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	
+}
+
+h2,
+#header h2 {
+
+}
+
+h3,
+#header h3 {
+	
+}
+
+h4,
+#header h4 {
+	
+}
+
+h5,
+#header h5 {
+	
+}
+
+h6,
+#header h6 {
+	
+}
+
+h1, h2, h3 {
+padding: 10px 0;
+
+}
+
+a, a:link, a:visited {
+  color: #38678b;
+  text-decoration: underline;
+}
+
+/* Table styles */
+
+table td {
+  padding: 8px;
+}
+
+thead td {
+	padding: 0;
+}
+
+thead th {
+  /*background: #fff;
+  border: none;
+  color: #5c6467;*/
+}
+
+th {
+	text-align: left;
+	background-color: #5c6467;
+	border: 1px solid #5b6466;
+	color: #fff;
+	padding: 8px;
+}
+
+table {
+	width: 100%;
+	margin: .5em 0;
+}
+
+td {
+	border: 0;
+}
+
+tbody td {
+	border: 1px solid #d7d7cc;
+}
+
+table ul {
+	padding: 0 0 0 2em;
+	margin: 0;
+}
+
+
+
+/* Form styles */
+
+form fieldset.inputs {
+	background: none;
+	border: none;
+	box-shadow: none;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+}
+
+
+/* --------------------------
+ layout 
+ ----------------------------*/
+ 
+ body {
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 10px 30px 30px 30px;
+}
+ 
+ #container {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+}
+
+#content {
+	float: none;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* ----------------
+HEADER 
+---------------------*/
+
+#header {
+	background: none;
+	background-image: none;
+	margin: -30px -30px 0 -30px;
+	padding: 20px 30px;
+	height: auto;
+	width: auto;
+	box-shadow: none;
+	border: none;
+	float: none;
+	border-bottom: 1px dotted #d7d7cc;
+	text-align: center;
+	position: relative;
+	overflow: auto;
+}
+
+#header h1 {
+	font-size: 4em;
+	text-shadow: none;
+	font-weight: normal;
+	font-style: normal;
+	font-weight:100;
+	overflow: hidden;
+}
+
+#header h2 {
+	font-size: 1.4em;
+	overflow: hidden;
+	
+}
+
+#nav {
+	float: none;
+	width: auto;
+	display: block;
+	margin: 0 -30px 0 -30px;
+	padding: 10px 30px;
+	background-color: none;
+	background: none;
+	clear: both;
+	overflow: auto;
+	border-bottom: 1px dotted #d7d7cc;
+	height: auto;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	display: inline;
+}
+
+#nav li a {
+	border: 1px dotted #d7d7cc;
+	padding: 10px;
+	float: left;
+	margin-right: 10px;
+}
+
+#nav li a:hover {
+	border: 1px dotted #d7d7cc;
+	background-color: #d7d7cc;
+	color: #286f07;
+}
+
+/* Sub nav (used anywhere we want nav like buttons) */
+
+.sub_nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+.sub_nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+.sub_nav li a {
+	border: 1px dotted #d7d7cc;
+	padding: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+.sub_nav li a:hover {
+	border: 1px dotted #d7d7cc;
+	background-color: #d7d7cc;
+	color: #286f07;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+	float: none;
+	width: auto;
+	display: block;
+	margin: 0 -30px 0 -30px;
+	padding: 10px 30px;
+	background-color: none;
+	background: none;
+	clear: both;
+	overflow: auto;
+	border-bottom: 1px dotted #d7d7cc;
+	height: auto;
+	font-size: .8em;
+}
+
+.breadcrumbs ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumbs ul li {
+	display: inline;
+}
+
+/* header search */
+
+.nav_search {
+	float: right;
+	clear: right;
+	text-align: right;
+	font-size: 1em;
+	/*background-color: red;*/
+	width: 18em;
+	padding: 10px 0px 0px 5px;
+	margin: -10px 0 -20px 0;
+}
+
+#nav form {
+	float: right;
+	clear: right;
+	text-align: right;
+	font-size: 1em;
+
+}
+
+#nav form .textField {
+	border: 1px solid #d7d7cc;
+	padding: .3em;
+	margin: 0;
+	width: 10em;
+	
+
+}
+
+#nav .submit {
+	/*background-color: RGBA(255,255,255,.8);*/
+	background: url(../template/RGBA-255-255-255_8.png) center center;
+	border: none;
+	padding: .3em;
+	margin: 0;
+	border-radius: 0;
+	background-color: #fff;
+}
+
+.textField, .submit {
+	/*background-color: RGBA(255,255,255,.8);*/
+	background: url(../template/RGBA-255-255-255_8.png) center center;
+	background-color: #fff;
+}
+
+.advanced_search {
+	float: right;
+	clear: right;
+	font-size: .8em;
+	margin-right: 4.7em;
+	/*background-color: #d7d7cc;*/
+	width: 13em;
+}
+
+
+/*Other*/
+
+
+.content {
+	
+}
+
+.footer {
+	
+}
+
+li.selected a {
+	background-color: #f7f7ec;
+}
+
+.home .nav-home a,
+.search .nav-search a,
+.volunteer .nav-volunteer a,
+.county_listing .nav-county_listing a,
+.about .nav-about a
+
+ {
+	background-color: #f7f7ec;
+}
+
+/* ---------------------------
+Decorative Elements
+-----------------------------*/
+
+.callout {
+	
+	border: 3px double #d7d7cc;
+	padding: 10px 20px 0px 20px;
+}
+
+.key {
+	border: 3px double #d7d7cc;
+	padding: 5px 10px 0px 10px;
+	margin-bottom: 20px;
+}
+
+
+
+/* ---------------------------
+County pages
+------------------------------*/
+
+.county_info {
+	float: right;
+}
+
+
+
+
+/* ---------------------------
+Volunteer pages
+------------------------------*/
+
+.volunteer ol li {
+	margin: 20px 0;
+}
+
+/* ---------------------------
+Search pages
+------------------------------*/
+
+.search_query {
+	
+}
+
+
+
+ul.checkbox_select_county::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+ul.checkbox_select_county::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+}
+ul.checkbox_select_county::-webkit-scrollbar-track {
+  background-color: #fff);
+  width: 7px;
+}
+
+.search_query ol {
+	margin: 0;
+	padding: 0;
+}
+
+.search_query ol li {
+	list-style-type: none;
+	border: 1px solid #d7d7cc;
+	margin: .5em 0 ;
+	padding: .5em;
+	background-color: #f7f7ec;
+	width: 45%;
+	float: left;
+	margin-right: 5px;}
+	
+li#search_query_last_name_input,
+li#search_query_soundex,
+li#search_wuery_first_name,
+li#search_query_fuzzy_input
+ {
+	height: 2.5em;
+}
+
+ol.search_record_type li {
+	width: 29%;
+}
+
+#search_query_submit_action {
+	width: 4.2em;
+	border: none;
+	background: none;
+	font-size: 1.6em;
+	padding: 0;
+}
+
+.search_query label {
+	display: block;
+	
+}
+
+.checkbox_select_county {
+	height: 15em;
+	overflow:scroll;
+	width: 45%;
+	border: 2px solid #d7d7cc;
+	background-color: #f7f7ec;
+	padding: 2px 0 0 1em;
+}
+
+.checkbox_select_county li {
+	list-style-type: none;
+}
+
+ol.search_record_type {
+	background-color: yellow;
+	clear: both;
+}
+
+ol.search_record_type li {
+	float: left;
+}
+
+.search_query p {
+	clear: both;
+}
+
+.search_query input {
+	margin-right: .5em;
+}
+
+/* Search results */
+
+.search_results_key {
+	border: 3px double #d7d7cc;
+;
+	float: right;
+	width: 40%;
+	font-size: .8em;
+	padding:.2em;
+	margin: .5em;
+	
+}
+
+.search_results_key ul {
+	margin: 0 0 0 1.5em;
+	padding: 0;
+}
+
+
+
+
+
+/* ---------------------------
+Temporary code for display -KMD
+------------------------------*/
+
+a.unlink {
+
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+
+
+
+/* Media query for smaller screen sizes - mostly so tables fit */
+
+@media only screen and (max-width: 40em) {
+	
+	body {
+		padding: 0;
+		font-size: .8em;
+	}
+
+	table td {
+		padding: 3px;
+	}
+	
+}
+
+
+
+
