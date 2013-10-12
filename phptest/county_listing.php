@@ -46,18 +46,22 @@
                         "#scotland">Scotland</a></li>
                 </ul>
                 
-                <h3 id="england">England</h3>
+                <h3 id="england">Counties in England</h3>
                 
                 <div class="county_info">
-                <h3><a name="england"><!-- --></a><font color="#008000">Counties in
-                    England</font></h3>
-                
-                <p><img src="assets/images/engmap-engw.gif" width="200" height="228" border="0"
+                <p><img src="assets/images/counties_england.jpg" width="200" height="200" border="0"
                     alt="England Counties" /></p>
                 
-                <p><b><a href=
+                <p><a href=
                     "mailto:reg-england@freereg.org.uk?England%20Coordination">Coordinators: FreeREG
-                    Executive</a></b><br /></p>
+                    Executive</a></p>
+                    
+                    
+                
+                <p>See the <a href="http://www.genuki.org.uk/big/eng/">GENUKI England</a>
+                pages for all other information on England genealogy resources, county
+                information and parishes.</p>
+</p>
                     </div>
                 
                 <ol>
@@ -150,25 +154,24 @@
                 <p>Cumbria - see Cumberland, Lancashire, Westmorland.<br />
                     Isle of Wight - see Hampshire</p>
                 
-                <p><a href="#top"><img src="assets/images/top.gif" width="41" height="20" alt="top of this page" /></a></p>
+                <p><a href="#top">go to top</a></p>
                 
-                <a href="http://www.genuki.org.uk/big/eng/"><img src=
-                    "assets/images/genukilogo.gif" width="96" height="78" alt="GENUKI England"/></a>
-                
-                <p>See the <a href="http://www.genuki.org.uk/big/eng/">GENUKI England</a>
-                pages for all other information on England genealogy resources, county
-                information and parishes.</p>
-                
-                <h3 id="wales">Wales</h3>
+                                
+                <h3 id="wales">Counties in Wales</h3>
                 
                 <div class="county_info">
-                    <h3><font color="#008000">Counties in Wales</font></h3>
-                    
-                    <p><img src="assets/images/engmap-walw.gif" width="200" height="228" alt=
+                                        
+                    <p><img src="assets/images/counties_wales.jpg" width="200" height="200" alt=
                         "Wales Counties" /></p>
                     
                     <p><b><a href="mailto:reg-wales@freereg.org.uk?Wales%20Coordination">Coordinator:
                         Team Wales</a><br /></b></p>
+                        
+                         
+                
+                <p>See the <a href="http://www.genuki.org.uk/big/wal/">GENUKI Wales</a>
+                    pages for all other information on Wales genealogy resources, county
+                    information and parishes.</p>
                 </div>
                     
                     <ol>
@@ -199,28 +202,27 @@
                         <li><b><a href="rad.htm" class="unlink">Radnorshire</a></b></li>
                     </ol>
                 
-                <p><a href="#top"><img src="assets/images/top.gif" width="41" height="20" alt=
-                "top of this page" /></a></p>
+                <p><a href="#top">go to top</a></p>
                 
-                <a href="http://www.genuki.org.uk/big/wal/"><img src=
-                    "assets/images/genukilogo.gif" width="96" height="78" alt="GENUKI England"
-                     /></a>
+               
                 
-                <p>See the <a href="http://www.genuki.org.uk/big/wal/">GENUKI Wales</a>
-                    pages for all other information on Wales genealogy resources, county
-                    information and parishes.</p>
-                
-                <h3 id="scotland">Scotland</h3>
+                <h3 id="scotland">Counties in Scotland</h3>
                 
                 <div class="county_info">
-                    <h3><font color="#008000">Counties in Scotland</font></h3>
                     
-                    <p><img src="assets/images/sct_cmap.gif" width="200" height="228" border="0" alt=
+                    
+                    <p><img src="assets/images/counties_scotland.jpg" width="200" height="200" border="0" alt=
                         "Scotland Counties" /></p>
                     
                     <p><b><a href=
                         "mailto:reg-volunteer@freereg.org.uk?cc=reg-scotland@freereg.org.uk&amp;subject=Scotland%20Coordination">
                         Coordinator for Scotland</a></b></p>
+                        
+                        
+                
+                <p>See the <a href="http://www.genuki.org.uk/big/sct/">GENUKI Scotland</a>
+                    pages for all other information on Scotland genealogy resources, county
+                    information and parishes.</p>
                 </div>
                 
                 <ol>
@@ -291,12 +293,8 @@
                     <li><b><a href="wig.htm" class="unlink">Wigtownshire</a></b></li>
                 </ol>
                 
-                <a href="http://www.genuki.org.uk/big/sct/"><img src=
-                    "assets/images/genukilogo.gif" width="96" height="78" alt="GENUKI England"
-                     /></a>
+                <p><a href="#top">go to top</a></p>
                 
-                <p>See the <a href="http://www.genuki.org.uk/big/sct/">GENUKI Scotland</a>
-                    pages for all other information on Scotland genealogy resources, county
-                    information and parishes.</p>
+                
                 
   <?php include("templates/footer.php"); ?>  

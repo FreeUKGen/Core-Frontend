@@ -1,3 +1,5 @@
+/* @override http://localhost/~Kdalziel/FreeREGMockups/phptest/assets/css/style.css */
+
 /* --------------------------
  Stylesheet for wireframes
  ----------------------------*/
@@ -15,6 +17,8 @@ h1, h2, h3, h4, h5, h6,
 	/* Corben is a google font, linked in header of HTML */
 }
 
+
+
 /* --------------------------
  HTML Styles 
  ----------------------------*/
@@ -29,6 +33,8 @@ body {
 	border-right: 3px double #d7d7cc;
 	border: 3px double #d7d7cc;
 	background-color: #fff;
+	position: relative;
+	overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -221,8 +227,8 @@ HEADER
 	background-color: none;
 	background: none;
 	clear: both;
-	overflow: auto;
-	border-bottom: 1px dotted #d7d7cc;
+	/*overflow: auto;*/
+	/*border-bottom: 1px dotted #d7d7cc;*/
 	height: auto;
 }
 
@@ -247,6 +253,50 @@ HEADER
 	background-color: #d7d7cc;
 	color: #286f07;
 }
+
+/* div.user-nav - for user sub navigation */
+
+.user-nav {
+	float: right;
+	position: relative;
+	margin: 0;
+}
+
+.user-nav ul li {
+	margin: 0;
+}
+
+#nav .user-nav a {
+	margin: 0;
+	border: 1px dotted #fff;
+	/*background-color: #e9e9de;*/
+}
+
+.ajaxdiv {
+	/*width: 300px;
+	height: 300px;*/
+	background: #f7f7ec;
+	position: absolute;
+	top: 3em;
+	right: 3em;
+	padding: 10px 20px;
+	border: 2px solid #d7d7cc;
+	text-align: left;
+	z-index: 2;
+}
+
+.ajaxdiv label {
+	text-align: left;
+}
+
+.ajaxdiv .search_query ol li {
+	text-align: left;
+	width: auto;
+	background-color: #d7d7cc;
+}
+
+
+
 
 /* Sub nav (used anywhere we want nav like buttons) */
 
@@ -281,13 +331,14 @@ HEADER
 	float: none;
 	width: auto;
 	display: block;
-	margin: 0 -30px 0 -30px;
+	margin: 3.3em -30px 0 -30px;
 	padding: 10px 30px;
 	background-color: none;
 	background: none;
 	clear: both;
 	overflow: auto;
 	border-bottom: 1px dotted #d7d7cc;
+	border-top: 1px dotted #d7d7cc;
 	height: auto;
 	font-size: .8em;
 }
@@ -388,8 +439,14 @@ Decorative Elements
 -----------------------------*/
 
 .callout {
-	
 	border: 3px double #d7d7cc;
+}
+
+p.callout {
+	padding: 10px;
+}
+
+div.callout {
 	padding: 10px 20px 0px 20px;
 }
 
@@ -407,6 +464,16 @@ County pages
 
 .county_info {
 	float: right;
+	width: 200px;
+	padding: 10px 20px;
+	border: 1px solid #d4d4c9;
+	clear: right;
+}
+
+h3#england, h3#scotland, h3#wales {
+	clear: both;
+	border-top: 3px solid #d7d7cc;
+	margin-top: 20px;
 }
 
 
@@ -418,6 +485,17 @@ Volunteer pages
 
 .volunteer ol li {
 	margin: 20px 0;
+}
+
+/* Volunteer Log in */
+
+/* Volunteer portal */
+
+form.upload_file {
+	margin: 20px 0;
+	border: 1px solid #d4d4ca;
+	display: inline-block;
+	padding: 5px;
 }
 
 /* ---------------------------
@@ -456,7 +534,8 @@ ul.checkbox_select_county::-webkit-scrollbar-track {
 	background-color: #f7f7ec;
 	width: 45%;
 	float: left;
-	margin-right: 5px;}
+	margin-right: 5px;
+}
 	
 li#search_query_last_name_input,
 li#search_query_soundex,
@@ -517,7 +596,6 @@ ol.search_record_type li {
 
 .search_results_key {
 	border: 3px double #d7d7cc;
-;
 	float: right;
 	width: 40%;
 	font-size: .8em;

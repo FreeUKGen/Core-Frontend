@@ -11,6 +11,9 @@
             <link href="assets/css/normalize.css" media="screen" rel="stylesheet" type="text/css"/>
             
             <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+            
+            <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+            <script src="assets/js/script.js"></script>
     
     </head>
     <body>
@@ -30,4 +33,14 @@
                     <li class="nav-county_listing"><a href="county_listing.php">County Listing</a></li>
                     <li class="nav-about"><a href="about.php">About</a></li>
                 </ul> 
+                
+                <div class="user-nav">
+                <ul>
+                    <li class="nav-log-in"><a href="volunteer_login.php">Log In</a></li>
+                </ul> 
+                </div>
+
             </div>
+            
+          
+                          
