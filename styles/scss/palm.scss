@@ -69,6 +69,50 @@
 
 
 /**
+ * Site header
+ */
+.site__header {
+  overflow: hidden;
+  margin-bottom: $base-spacing-unit;
+  @include vendor(box-shadow, 0 5px 14px #cccccc);
+
+  .banner-horz { margin-bottom: $base-spacing-unit * 2; }
+}
+  .site__header__logo {
+    float: left;
+  }
+  .site__header__freeukgen-logo {
+    float: right;
+    margin-bottom: $base-spacing-unit / 2;
+  }
+  .site__header__nav {
+    float: right;
+
+    ul {
+      @extend %nav;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-left: $base-spacing-unit * 1.5;
+    }
+    a {
+      text-transform: uppercase;
+      color: $magenta;
+      font-weight: bold;
+      padding: $half-spacing-unit 0;
+      &:active,
+      &:hover {
+        color: $magenta-brighter;
+      }
+    }
+  }
+
+
+
+
+
+/**
  * A list of icons
  */
 .icon-list {

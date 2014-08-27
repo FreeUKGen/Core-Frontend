@@ -58,3 +58,14 @@
 }
   .banner__body { position: static; }
 }
+
+
+
+/**
+ * A horizontal banner
+ */
+.banner-horz {
+  text-align: center;
+  position: relative;
+  margin: $base-spacing-unit 0;
+}
