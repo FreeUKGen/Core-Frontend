@@ -1,0 +1,22 @@
+{
+  "name": "FreeReg",
+  "version": "1.0.0",
+  "authors": [
+    "Josh Angell <josh@supercooldesign.co.uk>",
+    "James Coleman <james@supercooldesign.co.uk>"
+  ],
+  "description": "Frontend resources for FreeReg",
+  "license": "MIT",
+  "homepage": "http://supercooldesign.co.uk/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit.css": "~5.0.1"
+  }
+}
