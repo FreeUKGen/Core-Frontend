@@ -73,7 +73,7 @@
  */
 .site__header {
   overflow: hidden;
-  margin-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit * 2;
   @include vendor(box-shadow, 0 5px 14px #cccccc);
 
   .banner-horz { margin-bottom: $base-spacing-unit * 2; }
