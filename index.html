@@ -50,7 +50,7 @@
 
   <style media="screen">
     /* This is just here for the purposes of the ui page */
-    .title {
+    .sep {
       margin-top: 120px;
       margin-bottom: 72px;
     }
@@ -75,51 +75,60 @@
 
   <main role="main" class="container">
 
-    <section>
+    <article>
 
       <div class="grid">
 
-        <div class="grid__item  two-thirds">
+        <div class="grid__item  two-thirds  palm-one-whole">
 
-          <h1 class="title">I am a page title</h1>
+          <header>
+            <h1 class="title">I am a page title</h1>
+          </header>
 
-          <p class="lede">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          </p>
+          <section>
+            <p class="lede">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
 
-          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
 
-          <h2>This is a sub-heading</h2>
+            <h2>This is a sub-heading</h2>
 
-          <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et.
-          </p>
+            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et.
+            </p>
 
-          <h3>And a sub-sub-heading</h3>
+            <h3>And a sub-sub-heading</h3>
 
-          <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.
-          </p>
+            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica.
+            </p>
+          </section>
 
         </div>
 
-        <div class="grid__item one-third">
+        <!--
+          The .push-half--top class here is just a visual adjustment
+          to cater for the fact that the .title in the left column
+          is so large that its line-height makes the box on the right
+          seem out, when its really not.
+        -->
+        <div class="grid__item  one-third  palm-one-whole  push-half--top">
 
-          <div class="idealnd island__grey">
+          <aside class="island  island--light">
 
-            <h3>I am a page title</h3>
+            <h3 class="beta  text--teal  flush--bottom">I am a page title</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 
-          </div>
+          </aside>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
     <section>
-      <h1 class="title">Tables</h1>
+      <h1 class="title  sep">Tables</h1>
 
       <table class="table">
         <thead>
@@ -166,7 +175,7 @@
     </section>
 
 
-    <h1 class="title">Forms and Buttons</h1>
+    <h1 class="title  sep">Forms and Buttons</h1>
 
     <section class="island  island--light">
 
@@ -245,7 +254,7 @@
 
 
 
-    <h1 class="title">Search results</h1>
+    <h1 class="title  sep">Search results</h1>
 
     <section class="island  island--grey  criteria-summary">
       <dl>
@@ -294,7 +303,7 @@
 
 
 
-    <h1 class="title">Transcriptions</h1>
+    <h1 class="title  sep">Transcriptions</h1>
 
     <article class="grid  grid--double">
       <div class="grid__item  two-thirds">
@@ -363,7 +372,7 @@
 
 
 
-    <h1 class="title">Intro</h1>
+    <h1 class="title  sep">Intro</h1>
 
     <section class="grid">
 
@@ -387,7 +396,7 @@
 
 
 
-    <h1 class="title">Shout outs</h1>
+    <h1 class="title  sep">Shout outs</h1>
 
     <section class="grid  grid--half">
 
@@ -416,7 +425,7 @@
 
 
 
-    <h1 class="title">Stats box</h1>
+    <h1 class="title  sep">Stats box</h1>
 
     <section class="text--center">
 
@@ -455,7 +464,7 @@
 
 
 
-  <h1 class="title  container">Site Footer</h1>
+  <h1 class="title  sep  container">Site Footer</h1>
 
   <footer>
 
