@@ -1,5 +1,3 @@
-@if $use-stats == true{
-
 /*------------------------------------*\
    $STATS
 \*------------------------------------*/
@@ -53,6 +51,7 @@
 
 
   .stat {
+    float: none;
     margin: $base-spacing-unit; // remove grid
   }
 
@@ -71,7 +70,6 @@
 
   .stat-group__header {
     border-bottom: 1px solid #dddddd;
-    clear: both;
   }
 
     .stat-group__header__title {
@@ -85,33 +83,18 @@
 
   .stat-group__footer {
     border-top: 1px solid #dddddd;
-    clear: both;
   }
 
     .stat-group__footer__primary,
     .stat-group__footer__secondary {
       @include font-size(14px, false);
-      float: right;
       color: #888;
       margin-top: $base-spacing-unit / 4;
+      margin-bottom: $half-spacing-unit;
     }
 
     .stat-group__footer__primary {
-      float: left;
-      strong, b { color: $navy; }
+      strong, b {
+        color: $navy;
+      }
     }
-
-
-// a few tweaks for mobile
-@include media-query(palm) {
-  .stat { float: none; }
-
-  .stat-group__footer__primary,
-  .stat-group__footer__secondary {
-    float: none;
-    margin-bottom: $half-spacing-unit;
-  }
-}
-
-
-}//endif

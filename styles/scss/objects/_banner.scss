@@ -65,13 +65,5 @@
  * A horizontal banner - only show on desktop
  */
 .banner-horz {
-  text-align: center;
-  position: relative;
-  margin: $base-spacing-unit 0;
-  height: 90px;
-
-  @include media-query(palm) {
-    display: none;
-  }
-
+  display: none;
 }
