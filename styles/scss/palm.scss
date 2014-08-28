@@ -38,6 +38,7 @@
 /**
  * Objects and abstractions
  */
+@import "objects/offcanvas";
 @import "objects/alerts";
 @import "objects/beautons";
 @import "objects/container";
@@ -78,40 +79,81 @@
   position: relative;
   z-index: 2;
   @include vendor(box-shadow, 0 5px 14px #cccccc);
-
-  .banner-horz { margin-bottom: $base-spacing-unit * 2; }
 }
-  .site__header__logo {
-    // float: left;
-    margin: 0 auto;
-    display: block !important;
-  }
-  .site__header__freeukgen-logo {
-    // float: right;
-    margin: ($base-spacing-unit / 2) auto;
-    display: block !important;
 
-    // margin-bottom: $base-spacing-unit / 2;
+  .site__header__menu-btn {
+
+    // btn reset
+    background: none;
+    border: 0;
+    padding: 0;
+
+    position: absolute;
+    top: $base-spacing-unit / 2;
+    right: $base-spacing-unit / 2;
+
+    span {
+      display: block;
+      @include font-size(16px, false);
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $teal;
+      padding: ($base-spacing-unit / 6) ($base-spacing-unit / 3);
+      border: 2px solid $teal;
+      @include vendor(border-radius, 4px);
+    }
+
+    &:active span,
+    &:hover span {
+      color: $teal-brighter;
+      border-color: $teal-brighter;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    // hide cancel initially
+    .icon__cancel {
+      display: none;
+    }
+
   }
+
+    /**
+     * Active state
+     */
+    .site__header__menu-btn--active {
+      span {
+        display: none;
+      }
+      .icon__cancel {
+        display: block;
+      }
+    }
+
+  .site__header__logo {
+    margin: ($base-spacing-unit * 2) auto $base-spacing-unit auto;
+    display: block !important;
+  }
+
+  .site__header__freeukgen-logo {
+    margin: 0 auto $base-spacing-unit auto;
+    display: block !important;
+  }
+
   .site__header__nav {
-    // float: right;
 
     ul {
       @extend %nav;
       @extend %nav--stacked;
-      // margin-bottom: 0;
       margin-top: $base-spacing-unit;
-    }
-
-    li {
-      // margin-left: $base-spacing-unit * 1.5;
     }
 
     a {
       text-transform: uppercase;
       color: $magenta;
       font-weight: bold;
-      // padding: $half-spacing-unit 0;
       &:active,
       &:hover {
         color: $magenta-brighter;

@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   /**
    * load plugins
    */
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-grunticon');
@@ -15,6 +16,19 @@ module.exports = function(grunt) {
    */
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
+
+    //////////
+    // COPY //
+    //////////
+    copy: {
+
+      js: {
+        src: 'bower_components/classie/classie.js',
+        dest: 'scripts/dist/classie.js'
+      }
+
+    },
 
 
     ////////////
@@ -104,6 +118,6 @@ module.exports = function(grunt) {
   /**
    * default tasks
    */
-  grunt.registerTask('default', ['svgmin','grunticon','sass']);
+  grunt.registerTask('default', ['copy','svgmin','grunticon','sass']);
 
 };

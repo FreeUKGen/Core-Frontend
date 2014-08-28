@@ -95,6 +95,18 @@
 
 
 
+.icon__cancel {
+  background-image: url('../../images/png/cancel.png');
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+ *display: inline;
+  zoom: 1;
+}
+
+
+
 .icon__chevron-down {
   background-image: url('../../images/png/chevron-down.png');
   background-repeat: no-repeat;
