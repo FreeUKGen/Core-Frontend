@@ -65,7 +65,8 @@
 /**
  * Slient classes used for extending further down
  */
-%nav { @extend .nav; }
+%nav          { @extend .nav; }
+%nav--stacked { @extend .nav--stacked; }
 
 
 
@@ -81,33 +82,42 @@
   .banner-horz { margin-bottom: $base-spacing-unit * 2; }
 }
   .site__header__logo {
-    float: left;
+    // float: left;
+    margin: 0 auto;
+    display: block !important;
   }
   .site__header__freeukgen-logo {
-    float: right;
-    margin-bottom: $base-spacing-unit / 2;
+    // float: right;
+    margin: ($base-spacing-unit / 2) auto;
+    display: block !important;
+
+    // margin-bottom: $base-spacing-unit / 2;
   }
   .site__header__nav {
-    float: right;
+    // float: right;
 
     ul {
       @extend %nav;
-      margin-bottom: 0;
+      @extend %nav--stacked;
+      // margin-bottom: 0;
+      margin-top: $base-spacing-unit;
     }
 
     li {
-      margin-left: $base-spacing-unit * 1.5;
+      // margin-left: $base-spacing-unit * 1.5;
     }
+
     a {
       text-transform: uppercase;
       color: $magenta;
       font-weight: bold;
-      padding: $half-spacing-unit 0;
+      // padding: $half-spacing-unit 0;
       &:active,
       &:hover {
         color: $magenta-brighter;
       }
     }
+
   }
 
 
