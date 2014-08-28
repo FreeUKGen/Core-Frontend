@@ -3,9 +3,8 @@
 \*------------------------------------*/
 
 /**
- * Clear left/right
+ * Some responsive helpers
  */
-
 .clear--left {
   clear: left;
 }
@@ -13,43 +12,25 @@
   clear: right;
 }
 
-/**
- * Brutally hide something - used on modal
- */
-.hide-brutal {
-  display: none;
+@each $state in palm, lap, lap-and-up, portable, desk, desk-wide{
+  @include media-query(#{$state}){
+
+    .#{$state}-clear--left {
+      clear: left;
+    }
+
+    .#{$state}-clear--right {
+      clear: right;
+    }
+
+    .#{$state}-flush--bottom {
+      margin: 0 !important;
+    }
+
+  }
 }
 
 
-/**
- * Needed for bootsrtap
- */
-
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-}
-
-
-
-/**
- * Extend margin helpers to include quarter values
- */
-.push-quarter          { margin:       $base-spacing-unit / 4!important; }
-.push-quarter--top     { margin-top:   $base-spacing-unit / 4!important; }
-.push-quarter--right   { margin-right: $base-spacing-unit / 4!important; }
-.push-quarter--bottom  { margin-bottom:$base-spacing-unit / 4!important; }
-.push-quarter--left    { margin-left:  $base-spacing-unit / 4!important; }
-.push-quarter--ends    { margin-top:   $base-spacing-unit / 4!important; margin-bottom:$base-spacing-unit / 4!important; }
-.push-quarter--sides   { margin-right: $base-spacing-unit / 4!important; margin-left:  $base-spacing-unit / 4!important; }
 
 
 

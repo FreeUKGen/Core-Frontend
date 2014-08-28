@@ -3,13 +3,17 @@
 /*------------------------------------*\
     $NAV
 \*------------------------------------*/
+.nav--stacked {
 
+  > li {
+    margin-bottom: $base-spacing-unit / 4;
 
-.nav--stacked{
-
-    > li{
-        margin-bottom: $base-spacing-unit / 4;
+    &:last-child {
+      margin-bottom: 0;
     }
+
+  }
+
 }
 
 
