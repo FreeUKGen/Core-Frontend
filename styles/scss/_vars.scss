@@ -106,6 +106,8 @@ $red:                  #FF1D1D;
 $red-brighter:         #eb0000;
 $red-lighter:          #ef5a5a;
 
+$light:                #f4f4f4;
+
 
 // some english aliases that we use around the place
 
@@ -140,5 +142,5 @@ $colours:(
   "teal" $teal $teal-brighter $teal-lighter #fff,
   "blue" $blue $blue-brighter $blue-lighter #fff,
   "orange" $orange $orange-brighter $orange-lighter #fff,
-  "light" #f4f4f4 #f4f4f4 #f4f4f4 #666
+  "light" $light $light $light #666
 );

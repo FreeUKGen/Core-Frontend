@@ -67,6 +67,7 @@
     right: 0;
     left: 0;
     top: 240px;
+    z-index: 3;
 
     @include manual-media-query(890px) {
       top: 260px;
@@ -75,10 +76,13 @@
       top: 265px;
     }
 
+    nav {
+      @include container(960px);
+    }
+
     ul {
       float: right;
       margin: 0;
-      position: relative;
       z-index: 6;
     }
 
@@ -94,9 +98,16 @@
 
     a {
       padding: $half-spacing-unit 0;
+      background: none;
 
       @include manual-media-query(660px) {
         @include font-size(17px, false);
+      }
+
+      &:active,
+      &:hover {
+        background: none;
+        color: $magenta-brighter;
       }
 
     }

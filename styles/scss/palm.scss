@@ -81,6 +81,9 @@
   @include vendor(box-shadow, 0 5px 14px #cccccc);
 }
 
+  /**
+   * Trigger for off canvas menu
+   */
   .site__header__menu-btn {
 
     // btn reset
@@ -132,6 +135,7 @@
       }
     }
 
+
   .site__header__logo {
     margin: ($base-spacing-unit * 2) auto $base-spacing-unit auto;
     display: block !important;
@@ -142,21 +146,28 @@
     display: block !important;
   }
 
+
+  /**
+   * Off canvas nav
+   */
   .site__header__nav {
+    z-index: 1;
 
     ul {
       @extend %nav;
       @extend %nav--stacked;
-      margin-top: $base-spacing-unit;
+      margin-top: 0;
     }
 
     a {
+      background: $light;
       text-transform: uppercase;
       color: $magenta;
       font-weight: bold;
+      padding: $base-spacing-unit / 2;
       &:active,
       &:hover {
-        color: $magenta-brighter;
+        background: #e2e2e2;
       }
     }
 

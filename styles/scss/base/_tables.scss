@@ -15,7 +15,7 @@ table {
 
     // like an `.islet  .islet--light`
     span {
-      background: #f4f4f4;
+      background: $light;
       padding: $base-spacing-unit / 2;
       color: #888888;
     }
@@ -60,7 +60,7 @@ table {
    * Hovers
    */
   tbody tr:hover td {
-    background: #f4f4f4;
+    background: $light;
   }
 
 
