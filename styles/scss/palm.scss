@@ -74,7 +74,8 @@
  */
 .site__header {
   overflow: hidden;
-  margin-bottom: $base-spacing-unit * 2;
+  position: relative;
+  z-index: 2;
   @include vendor(box-shadow, 0 5px 14px #cccccc);
 
   .banner-horz { margin-bottom: $base-spacing-unit * 2; }
@@ -111,6 +112,34 @@
 
 
 
+/**
+ * Site content
+ */
+.site__content {
+  position: relative;
+  z-index: 1;
+  padding-top: $base-spacing-unit * 2;
+}
+
+  .icon__honeycomb--top-right {
+    width: 100% !important;
+    height: auto !important;
+    background-position: top right;
+  }
+
+
+
+/**
+ * Site footer
+ */
+.site__footer {}
+
+  .icon__honeycomb--bottom-left {
+    width: 100% !important;
+    height: auto !important;
+    background-position: bottom left;
+  }
+
 
 
 /**
@@ -123,15 +152,4 @@
     display: block;
     margin-bottom: $base-spacing-unit;
   }
-}
-
-
-
-/**
- *
- */
-.icon__honeycomb--bottom-left {
-  width: 100% !important;
-  height: auto !important;
-  background-position: bottom left;
 }
