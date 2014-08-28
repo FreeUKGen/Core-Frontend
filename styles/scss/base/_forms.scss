@@ -170,3 +170,72 @@ form {
     @include font-size(22px, false);
   }
 }
+
+
+
+
+/**
+ * Criteria
+ *
+ * Typical scenario: a form has been filled in and you want
+ * to dsiaply all the options the use selected
+ *
+ * Suggested markup:
+ *
+ <div class="criteria-group">
+   <dl class="criteria">
+     <dt class="criteria__name">First name</dt>
+     <dd class="criteria__value">John</dd>
+   </dl>
+   <dl class="criteria">
+     <dt class="criteria__name">Last name</dt>
+     <dd class="criteria__value">Smith</dd>
+   </dl>
+   <dl class="criteria">
+     <dt class="criteria__name">Place</dt>
+     <dd class="criteria__value">Aldermarston (Berkshire)</dd>
+   </dl>
+ </div>
+ *
+ */
+.criteria-group {
+  margin-left: -$base-spacing-unit;
+}
+
+  .criteria {
+    float:left;
+    margin-left: $base-spacing-unit;
+  }
+
+    .criteria__name {
+      font-weight: lighter;
+      margin: 0;
+    }
+    .criteria__value {
+      font-weight: bold;
+      margin: 0;
+    }
+
+
+
+/**
+ * Groups of checkboxes and radios
+ */
+.check-list {
+
+  @include inline-block();
+
+  li {
+    @include inline-block();
+    margin-right: $base-spacing-unit;
+  }
+
+}
+  /**
+   * Labels in check-lists
+   */
+  .check-label,
+  .check-list label,
+  .check-list .label{
+    margin-bottom: 0;
+  }

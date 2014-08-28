@@ -304,36 +304,54 @@
 
       <h1 class="title  sep">Search results</h1>
 
-      <section class="island  island--grey  criteria-summary">
-        <dl>
+      <section class="island  island--light">
+        <div class="criteria-group">
+          <dl class="criteria">
+            <dt class="criteria__name">First name</dt>
+            <dd class="criteria__value">John</dd>
+          </dl>
+          <dl class="criteria">
+            <dt class="criteria__name">Last name</dt>
+            <dd class="criteria__value">Smith</dd>
+          </dl>
+          <dl class="criteria">
+            <dt class="criteria__name">Start year</dt>
+            <dd class="criteria__value">1925</dd>
+          </dl>
+          <dl class="criteria">
+            <dt class="criteria__name">End year</dt>
+            <dd class="criteria__value">1930</dd>
+          </dl>
+          <dl class="criteria">
+            <dt class="criteria__name">Type</dt>
+            <dd class="criteria__value">Baptism</dd>
+          </dl>
+          <dl class="criteria">
+            <dt class="criteria__name">Place</dt>
+            <dd class="criteria__value">Aldermarston (Berkshire)</dd>
+          </dl>
+        </div>
 
-          <dt>First name</dt>
-          <dd>John</dd>
+        <div class="cf"></div>
 
-          <dt>Last name</dt>
-          <dd>Smith</dd>
+        <ul class="check-list">
+          <li>
+            <label for="exactMatch">
+              Exact matches
+              <input type="checkbox" name="exactMatch" value="yes" checked>
+            </label>
+          </li>
+          <li>
+            <label for="inclusive">
+              Inclusive
+              <input type="checkbox" name="inclusive" value="yes" checked>
+            </label>
+          </li>
+        </ul>
 
-          <dt>Start year</dt>
-          <dd>1925</dd>
+        <span>4.5 mile radius (466 additional places)</span>
 
-          <dt>End year</dt>
-          <dd>1930</dd>
-
-          <dt>Type</dt>
-          <dd>Baptism</dd>
-
-          <dt>Place</dt>
-          <dd>Aldermarston (Berkshire)</dd>
-
-          <dt>Exact matches</dt>
-          <dd>Tick</dd>
-
-          <dt>Inclusive</dt>
-          <dd>Yes</dd>
-
-        </dl>
-
-        <a href="#" class="btn btn--small">Revise search</a>
+        <a href="#" class="btn  btn--small  float--right">Revise search</a>
 
       </section>
 
