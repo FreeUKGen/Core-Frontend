@@ -23,9 +23,14 @@ module.exports = function(grunt) {
     //////////
     copy: {
 
-      js: {
+      classie: {
         src: 'bower_components/classie/classie.js',
         dest: 'scripts/dist/classie.js'
+      },
+
+      shiv: {
+        src: 'bower_components/html5shiv/dist/html5shiv.min.js',
+        dest: 'scripts/dist/html5shiv.js'
       }
 
     },
