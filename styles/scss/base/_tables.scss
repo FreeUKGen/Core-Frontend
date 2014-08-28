@@ -106,3 +106,13 @@ table {
 [rowspan]{
   vertical-align: top;
 }
+
+
+
+/**
+ * A simple wrapping div to force the table to scroll
+ * inside the website frame when its too large
+ */
+.table-wrapper {
+  width: 100%;
+}
