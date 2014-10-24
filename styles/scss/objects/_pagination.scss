@@ -8,7 +8,7 @@
 
 .pagination {
 
-  @extend .nav;
+  @extend %nav;
 
   /**
    * Taking off inuit's whitespace hack, stick with commenting method.
@@ -25,11 +25,11 @@
    * Space the <a>’s out slightly narrower and colour them
    */
   > li {
-    padding: $base-spacing-unit / 4;
+    padding: $b-quarter;
 
     > a {
-      padding: $base-spacing-unit / 4;
-      margin: -($base-spacing-unit / 4);
+      padding: $b-quarter;
+      margin: -$b-quarter;
       color: #999999;
       &:hover {
         color: #686868;

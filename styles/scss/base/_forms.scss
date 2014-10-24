@@ -8,8 +8,8 @@
 .text-input {
   @include font-size(18px, false);
 
-  margin: 0 0 $base-spacing-unit 0;
-  padding: $base-spacing-unit / 2;
+  margin: 0 0 $b 0;
+  padding: $b-half;
   width: 100%;
   display: block;
   color: #666;
@@ -30,13 +30,13 @@ textarea.text-input { height: auto; }
 }
 
 .spoken-form .btn {
-  @extend .btn--small;
+  @extend %btn--small;
   @include inline-block;
   vertical-align: top;
 }
 
 .no-label  {
-  margin-top: $base-spacing-unit;
+  margin-top: $b;
 }
 
 
@@ -46,7 +46,7 @@ textarea.text-input { height: auto; }
  */
 label {
   font-weight: bold;
-  margin-bottom: $half-spacing-unit;
+  margin-bottom: $b-half;
 }
 
 
@@ -87,7 +87,7 @@ label {
  * Hides any inputs that are inside so that we
  * can have pretty styling for radios / checkboxes
  */
-.hide-inputs input { @extend .visuallyhidden; }
+.hide-inputs input { @extend %visuallyhidden; }
 
 
 
@@ -111,7 +111,7 @@ label {
   @include vendor(border-radius, 0);
 
   // style it the same as inputs
-  @extend .text-input;
+  @extend %text-input;
 
   // moz moz moz
   &:-moz-focusring {
@@ -199,12 +199,12 @@ form {
  *
  */
 .criteria-group {
-  margin-left: -$base-spacing-unit;
+  margin-left: -$b;
 }
 
   .criteria {
     float:left;
-    margin-left: $base-spacing-unit;
+    margin-left: $b;
   }
 
     .criteria__name {
@@ -227,7 +227,7 @@ form {
 
   li {
     @include inline-block();
-    margin-right: $base-spacing-unit;
+    margin-right: $b;
   }
 
 }

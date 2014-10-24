@@ -9,7 +9,7 @@
  */
 
 .banner {
-  @extend .island;
+  @extend %island;
   height: 311px;
   position: relative;
 }
@@ -25,9 +25,9 @@
   .banner__body {
     position: absolute;
     margin: 0;
-    bottom: $base-spacing-unit;
-    left: $base-spacing-unit;
-    right: $base-spacing-unit;
+    bottom: $b;
+    left: $b;
+    right: $b;
 
     font-weight: lighter;
   }

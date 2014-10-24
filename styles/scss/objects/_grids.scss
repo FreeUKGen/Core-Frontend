@@ -22,9 +22,9 @@
    * Extends `.grid` and is half the gutters
    */
   .grid--half {
-    margin-left: -$half-spacing-unit;
+    margin-left: -$b-half;
     .grid__item {
-      padding-left: $half-spacing-unit;
+      padding-left: $b-half;
     }
   }
 
@@ -33,9 +33,9 @@
    * Extends `.grid` and is double the gutters
    */
   .grid--double {
-    margin-left: -($base-spacing-unit * 2);
+    margin-left: -$b-double;
     .grid__item {
-      padding-left: $base-spacing-unit * 2;
+      padding-left: $b-double;
     }
   }
 }//endif

@@ -6,9 +6,9 @@
  * Validation list - this is designed to sit directly under a `.text-input`
  */
 .validation-list {
-  @extend .nav;
-  @extend .nav--stacked;
-  margin-bottom: $base-spacing-unit;
+  @extend %nav;
+  @extend %nav--stacked;
+  margin-bottom: $b;
   font-weight: bold;
 
 
@@ -33,7 +33,7 @@
 .select--success,
 .text-input--error,
 .text-input--success {
-  margin-bottom: $base-spacing-unit / 4;
+  margin-bottom: $b-quarter;
 }
 
 .select--error,

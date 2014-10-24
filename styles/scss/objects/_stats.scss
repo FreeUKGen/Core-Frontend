@@ -52,7 +52,7 @@
 
   .stat {
     float: none;
-    margin: $base-spacing-unit; // remove grid
+    margin: $b; // remove grid
   }
 
     .stat__title {
@@ -75,7 +75,7 @@
     .stat-group__header__title {
       @include font-size(18px);
       font-weight: bold;
-      margin-bottom: $base-spacing-unit / 4;
+      margin-bottom: $b-quarter;
       color: $navy;
     }
 
@@ -89,8 +89,8 @@
     .stat-group__footer__secondary {
       @include font-size(14px, false);
       color: #888;
-      margin-top: $base-spacing-unit / 4;
-      margin-bottom: $half-spacing-unit;
+      margin-top: $b-quarter;
+      margin-bottom: $b-half;
     }
 
     .stat-group__footer__primary {

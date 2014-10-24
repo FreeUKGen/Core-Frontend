@@ -8,7 +8,7 @@
  */
 
 .multi-list--spaced > li {
-  padding-right: $base-spacing-unit;
+  padding-right: $b;
   &.end-col { padding-right: 0; }
 }
 
@@ -21,8 +21,8 @@
  */
 .matrix,
 .multi-list {
-  > .last-two-cols { width:66.666%; }
-  > .last-three-cols { width:75%; }
-  > .last-four-cols { width:80%; }
+  > .last-two-cols   { @extend %two-thirds; }
+  > .last-three-cols { @extend %three-quarters; }
+  > .last-four-cols  { width: 80%; }
 }
 }//endif

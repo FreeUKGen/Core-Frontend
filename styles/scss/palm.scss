@@ -14,14 +14,16 @@
 
 
 /**
- * Generic utility styles etc.
+ * Generic utility bits
  */
+@import "generic/silent-classes";
+@import "generic/aliases";
 @import "generic/mixins";
 
 
 
 /**
- * Base styles; unclassed HTML elements etc.
+ * Base styles; mostly unclassed HTML elements etc.
  */
 @import "base/box-sizing";
 @import "base/main";
@@ -39,7 +41,6 @@
  * Objects and abstractions
  */
 @import "objects/offcanvas";
-@import "objects/alerts";
 @import "objects/beautons";
 @import "objects/container";
 @import "objects/nav";

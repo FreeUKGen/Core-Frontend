@@ -128,8 +128,8 @@
    *
    */
   @include media-query(#{$state}){
-    .#{$state}-push--top      { margin-top:   $base-spacing-unit!important; }
-    .#{$state}-push--bottom   { margin-bottom:$base-spacing-unit!important; }
+    .#{$state}-push--top      { margin-top:   $b!important; }
+    .#{$state}-push--bottom   { margin-bottom:$b!important; }
   }
 
 

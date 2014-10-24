@@ -6,8 +6,8 @@
  * fullwidth and pad the sides here on palm
  */
 .container {
-  padding-left: $base-spacing-unit;
-  padding-right: $base-spacing-unit;
+  padding-left: $b;
+  padding-right: $b;
 }
 // except inside containers...
 .island > .container,
