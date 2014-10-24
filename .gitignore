@@ -12,3 +12,6 @@ bower_components
 /styles/css
 /images/svg/min
 /images/png
+
+# ingore index - the project template repo will contain this
+index.html
