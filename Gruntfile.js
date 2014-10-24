@@ -91,7 +91,8 @@ module.exports = function(grunt) {
     sass: {
       prod: {
         options: {
-          style: 'compressed'
+          style: 'compressed',
+          loadPath: ['bower_components']
         },
         files: {
           'styles/css/lap_and_up.min.css' : 'styles/scss/lap_and_up.scss',

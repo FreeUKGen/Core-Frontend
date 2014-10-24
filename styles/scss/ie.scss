@@ -7,7 +7,11 @@
  * Vars, inuit, mixins and ie
  */
 @import "vars";
-@import "../../../inuit.css/defaults";
-@import "../../../inuit.css/generic/mixins";
+@import "inuit.css/defaults";
+@import "inuit.css/generic/mixins";
+// @import "../../../inuit.css/defaults";
+// @import "../../../inuit.css/generic/mixins";
+// @import "../../bower_components/inuit.css/defaults";
+// @import "../../bower_components/inuit.css/generic/mixins";
 @import "generic/mixins";
 @import "base/ie";
