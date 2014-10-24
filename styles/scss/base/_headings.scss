@@ -20,3 +20,24 @@ h4,.delta{
 h6,.zeta{
   line-height: 1.5;
 }
+
+
+/**
+ * Title styles
+ */
+
+// standard large, thin type with bottom border
+.title {
+  @include font-size(60px);
+  font-weight: lighter;
+  border-bottom: solid 1px #999;
+}
+
+// grey block designed to sit on top of sub-navs or islands etc
+.title-block {
+  background: $light;
+  padding: $b-half;
+  color: $teal;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
