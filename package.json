@@ -1,7 +1,7 @@
 {
-  "name": "FreeReg",
+  "name": "FreeUKGenealogy-Core-Frontend",
   "version": "1.0.0",
-  "description": "Frontend framework for FreeReg",
+  "description": "Frontend resources for Free UK Genealogy projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
