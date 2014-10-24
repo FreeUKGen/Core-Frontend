@@ -3,6 +3,10 @@
 /*------------------------------------*\
     $NAV
 \*------------------------------------*/
+
+/**
+ * Tweak the default from inuit
+ */
 .nav--stacked {
 
   > li {
@@ -12,6 +16,73 @@
       margin-bottom: 0;
     }
 
+  }
+
+}
+
+
+/**
+ * A stacked blocky sub nav with open and active states
+ */
+.sub-nav {
+  @extend %nav;
+  @extend %nav--stacked;
+  @include font-size(18px);
+
+  > li {
+    margin-bottom: 2px;
+    &.open > a {
+      color: $teal;
+      &:active,
+      &:hover {
+        color: $magenta;
+      }
+    }
+    &.active > a {
+      background: $teal;
+      color: #fff;
+    }
+  }
+
+  // all child levels
+  ul {
+    @extend %nav;
+    @extend %nav--stacked;
+    @include font-size(16px);
+
+    // direct children
+    > li {
+      margin-bottom: 0;
+
+      &.open > a {
+        color: $teal;
+        &:active,
+        &:hover {
+          color: $magenta;
+        }
+      }
+
+      &.active > a {
+        background: $teal;
+        color: #fff;
+      }
+    }
+
+    // grandchildren and below
+    ul a {
+      padding-left: $b * 1.5;
+    }
+  }
+
+  a {
+    background: $light;
+    padding: $b-half;
+    color: $navy;
+    &:active,
+    &:hover {
+      background: #eaeaea;
+      color: $magenta;
+    }
   }
 
 }
