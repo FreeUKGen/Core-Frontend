@@ -9,7 +9,11 @@ Frontend code and example markup that can form the frontend basis of other Free 
 
 You'll need [sass](http://sass-lang.com/) (>= 3.4), [npm](https://www.npmjs.org/), [Bower](http://bower.io/) and [Grunt](http://gruntjs.com/) installed before you go any further.
 
-To install the required packages run the following commands in the root of the project:
+
+To start a project you may want to just fork the template project to get started. That will give you the right files you need to install this project over bower and start using it.
+
+
+<!-- To install the required packages run the following commands in the root of the project:
 
     npm install
     bower install
@@ -23,7 +27,7 @@ Grunt can be run to watch for any changed files and re-compile as you go using t
     grunt watch
 
 
-
+ -->
 
 ## Markup
 
