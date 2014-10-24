@@ -1,8 +1,14 @@
 .DS_Store
 .sass-cache
+*.sublime-workspace
+*.sublime-project
 
+# ignore node/bower files
 node_modules
 bower_components
 
-*.sublime-workspace
-*.sublime-project
+# ignore compiled js/css/img
+/scripts
+/styles/css
+/images/svg/min
+/images/png
