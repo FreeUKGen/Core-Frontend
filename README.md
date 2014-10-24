@@ -1,6 +1,6 @@
-# FreeREGMockups
+# Free UK Gen Core Frontend
 
-Frontend code and example markup for the new FreeREG.
+Frontend code and example markup that can form the frontend basis of other Free UK Genealogy projects.
 
 
 
