@@ -7,6 +7,7 @@
   ],
   "description": "Frontend resources for Free UK Genealogy projects",
   "license": "MIT",
+  "main" : "styles/scss/palm.scss",
   "homepage": "http://supercooldesign.co.uk/",
   "private": true,
   "ignore": [
