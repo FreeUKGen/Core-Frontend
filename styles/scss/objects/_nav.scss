@@ -25,6 +25,7 @@
  * A stacked blocky sub nav with open and active states
  */
 .sub-nav {
+
   @extend %nav;
   @extend %nav--stacked;
   @include font-size(18px);
@@ -82,6 +83,31 @@
     &:hover {
       background: #eaeaea;
       color: $magenta;
+    }
+  }
+
+}
+
+
+/**
+ * A light islet with a 50% list inside
+ */
+.boxed-nav {
+
+  padding: $b-half $b-half 0 $b-half;
+  background: $light;
+  @extend %multi-list;
+
+  > li {
+    width: 50%;
+    margin-bottom: $b-half;
+  }
+
+  a {
+    color: $navy;
+    &:active,
+    &:hover {
+      color: $navy-lighter;
     }
   }
 
