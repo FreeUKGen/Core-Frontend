@@ -81,10 +81,7 @@ module.exports = function(grunt) {
             "star--dark" : [".icon__star:hover"]
           },
           cssprefix: '.icon__',
-          template: 'grunticon.hbs',
-          colors: {
-            white: "#ffffff"
-          }
+          template: 'grunticon.hbs'
         }
       }
     },
