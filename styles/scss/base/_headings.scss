@@ -41,4 +41,17 @@ h6,.zeta{
   color: $teal;
   margin-bottom: 2px;
   font-weight: normal;
+
+  .title-block__sub {
+    @include font-size(13px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #8a8889;
+    float: right;
+  }
+  a.title-block__sub:active,
+  a.title-block__sub:hover {
+    color: #6b6b6b;
+  }
+
 }

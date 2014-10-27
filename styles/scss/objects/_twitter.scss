@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    $TWITTER
+\*------------------------------------*/
+
+.twitter {
+}
+  .twitter__title {
+    @extend %title-block;
+    a {
+      @extend %title-block__sub;
+    }
+  }
+
+  .twitter__text {
+    @extend %islet;
+    background: $light;
+    margin-bottom: 2px;
+  }
+
+
+  .twitter__tools {
+
+    @extend %nav;
+    text-align: right;
+    width: 100%;
+    background: $light;
+    padding-right: $b-quarter;
+
+    li {
+
+      a {
+        padding: $b-quarter ($b / 8);
+      }
+
+      &.twitter__tools__follow {
+
+        float: left;
+        border-right: 2px solid #fff;
+
+        a {
+
+          @include font-size(13px);
+          color: #8a8889;
+          font-weight: bold;
+          padding: $b-quarter $b-half;
+
+          &:active,
+          &:hover {
+            background: #eaeaea;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
