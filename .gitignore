@@ -15,3 +15,6 @@ bower_components
 
 # ingore index - the project template repo will contain this
 index.html
+
+# ignore jekyll
+_site
