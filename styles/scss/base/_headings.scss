@@ -28,7 +28,8 @@ h6,.zeta{
 
 // standard large, thin type with bottom border
 .title {
-  @include font-size(60px);
+  @include font-size(60px, false);
+  line-height: 1.2;
   font-weight: lighter;
   border-bottom: solid 1px #999;
 }
