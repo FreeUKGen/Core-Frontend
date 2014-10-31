@@ -76,9 +76,10 @@ module.exports = function(grunt) {
         options: {
           pngfolder: '../../images/png',
           customselectors: {
-            "reply--dark" : [".icon__reply:hover"],
-            "repost--dark" : [".icon__repost:hover"],
-            "star--dark" : [".icon__star:hover"]
+            "reply--dark" : [".icon__reply:hover",".icon__reply:active"],
+            "repost--dark" : [".icon__repost:hover",".icon__repost:active"],
+            "star--dark" : [".icon__star:hover",".icon__star:active"],
+            "cancel--brighter" : [".icon__cancel:hover",".icon__cancel:active"]
           },
           cssprefix: '.icon__',
           template: 'grunticon.hbs'
