@@ -18,6 +18,7 @@ Gruntfile.js
 /styles/scss/palm.scss
 /styles/scss/lap_and_up.scss
 /styles/scss/ie.scss
+package.json
 
 # ignore jekyll examples
 index.html
