@@ -13,8 +13,12 @@ bower_components
 /images/svg/min
 /images/png
 
-# ingore index - the project template repo will contain this
-index.html
+# ingore these - the project template repo will contain them
+Gruntfile.js
+/styles/scss/palm.scss
+/styles/scss/lap_and_up.scss
+/styles/scss/ie.scss
 
-# ignore jekyll
+# ignore jekyll examples
+index.html
 _site
