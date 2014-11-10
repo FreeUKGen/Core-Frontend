@@ -13,7 +13,7 @@
   .island--#{nth($colour, 1)},
   .islet--#{nth($colour, 1)} {
     color: nth($colour, 5);
-    background: nth($colour, 2);
+    background-color: nth($colour, 2);
     a {
       color: #fff;
       text-decoration: underline;
@@ -27,7 +27,7 @@
   a.island--#{nth($colour, 1)},
   a.islet--#{nth($colour, 1)} {
     color: nth($colour, 5);
-    background: nth($colour, 2);
+    background-color: nth($colour, 2);
     &:active,
     &:hover {
       color: nth($colour, 5);
@@ -40,7 +40,7 @@
 .island--grey,
 .islet--grey {
   color: #fff;
-  background: #444444;
+  background-color: #444444;
   &:hover { color: #fff; }
 }
 
@@ -48,7 +48,7 @@
 .island--dark,
 .islet--dark {
   color: #fff;
-  background: #333333;
+  background-color: #333333;
   &:hover { color: #fff; }
 }
 
