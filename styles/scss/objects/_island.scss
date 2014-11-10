@@ -31,7 +31,7 @@
     &:active,
     &:hover {
       color: nth($colour, 5);
-      background: nth($colour, 3);
+      background-color: nth($colour, 3);
     }
   }
 }
