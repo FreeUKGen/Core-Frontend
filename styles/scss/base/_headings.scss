@@ -38,14 +38,13 @@ h6,.zeta{
   padding-bottom: $b-half;
 }
 
-// grey block designed to sit on top of sub-navs or islands etc
+// designed to in side an `.islet--bordered`
 .title-block {
   @include font-size(20px);
-  background: $light;
-  padding: $b-half;
   color: $teal;
-  margin-bottom: 2px;
   font-weight: normal;
+  padding-bottom: $b-quarter;
+  border-bottom: 1px solid #dedede;
 
   .title-block__sub {
     @include font-size(13px);

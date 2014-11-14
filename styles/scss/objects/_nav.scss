@@ -30,8 +30,25 @@
   @extend %nav--stacked;
   @include font-size(18px);
 
+  margin-bottom: - $b-half !important;
+
+  a {
+    padding: $b-half 0;
+    color: $navy;
+    &:active,
+    &:hover {
+      color: $magenta;
+    }
+  }
+
   > li {
-    margin-bottom: 2px;
+    border-bottom: 1px solid $lesslight;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
     &.open > a {
       color: $teal;
       &:active,
@@ -39,10 +56,22 @@
         color: $magenta;
       }
     }
-    &.active > a {
-      background: $teal;
-      color: #fff;
+
+    &.active {
+      // suck over the border of the prev li
+      margin-top: -1px;
+      border: 0;
+
+      > a {
+        background: $light;
+        margin-left: - $b-half;
+        margin-right: - $b-half;
+        padding-left: $b-half;
+        padding-right: $b-half;
+      }
+
     }
+
   }
 
   // all child levels
@@ -50,10 +79,14 @@
     @extend %nav;
     @extend %nav--stacked;
     @include font-size(16px);
+    margin-bottom: 0;
 
     // direct children
     > li {
-      margin-bottom: 0;
+
+      a {
+        padding: $b-quarter 0;
+      }
 
       &.open > a {
         color: $teal;
@@ -64,25 +97,23 @@
       }
 
       &.active > a {
-        background: $teal;
-        color: #fff;
+        background: $light;
+        margin-left: - $b-half;
+        margin-right: - $b-half;
+        padding-left: $b-half;
+        padding-right: $b-half;
       }
+
     }
 
     // grandchildren and below
-    ul a {
-      padding-left: $b * 1.5;
-    }
-  }
-
-  a {
-    background: $light;
-    padding: $b-half;
-    color: $navy;
-    &:active,
-    &:hover {
-      background: #eaeaea;
-      color: $magenta;
+    ul {
+      a {
+        padding-left: $b * 1.5;
+      }
+      .active a {
+        padding-left: $b * 2;
+      }
     }
   }
 
@@ -90,20 +121,20 @@
 
 
 /**
- * A light islet with a 50% list inside
+ * A 50% list designed to fit inside an `.islet--bordered`
  */
 .boxed-nav {
 
-  padding: $b-half $b-half 0 $b-half;
-  background: $light;
   @extend %multi-list;
+  margin-top: - $b-half;
 
   > li {
     width: 50%;
-    margin-bottom: $b-half;
+    margin-top: $b-half;
   }
 
   a {
+    @include font-size(16px, false);
     color: $navy;
     &:active,
     &:hover {

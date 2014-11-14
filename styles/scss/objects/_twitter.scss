@@ -3,6 +3,9 @@
 \*------------------------------------*/
 
 .twitter {
+  @extend %islet;
+  @extend %islet--bordered;
+  padding-bottom: $b-quarter;
 }
   .twitter__title {
     @extend %title-block;
@@ -12,8 +15,6 @@
   }
 
   .twitter__text {
-    @extend %islet;
-    background: $light;
     margin-bottom: 2px;
   }
 
@@ -23,17 +24,16 @@
     @extend %nav;
     text-align: right;
     width: 100%;
-    background: $light;
-    padding-right: $b-quarter;
+    padding-top: $b-quarter;
+    border-top: 1px solid $lesslight;
 
     li {
 
-      a {
-        padding: $b-quarter ($b / 8);
-      }
+      margin-left: $b-quarter;
 
       &.twitter__tools__follow {
-
+        margin-left: 0;
+        margin-right: $b-quarter;
         float: left;
         border-right: 2px solid #fff;
 
@@ -42,11 +42,10 @@
           @include font-size(13px);
           color: #8a8889;
           font-weight: bold;
-          padding: $b-quarter $b-half;
 
           &:active,
           &:hover {
-            background: #eaeaea;
+            color: #6b6b6b;
           }
 
         }

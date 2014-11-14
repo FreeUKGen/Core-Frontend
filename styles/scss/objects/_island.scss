@@ -36,6 +36,13 @@
   }
 }
 
+.banner--bordered,
+.island--bordered,
+.islet--bordered {
+  background-color: #fff;
+  border: 1px solid $lesslight;
+}
+
 .banner--grey,
 .island--grey,
 .islet--grey {
@@ -61,5 +68,14 @@
   margin-bottom: 0;
 }
 
+
+/**
+ * Islets are usually used in sidebar / aside type situations, so we're going
+ * to assume we alwasy want paragraphs slightly smaller there, if this is not
+ * the case make as specific object for it to bump it back up.
+ */
+.islet p {
+  @include font-size(16px, false);
+}
 
 }//endif
